@@ -1,0 +1,611 @@
+html {
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: auto;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.main-site {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #efe6ee;
+  box-sizing: border-box;
+}
+/* HLAVICKA */
+.head {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.logo {
+  margin: auto;
+}
+.headings {
+  text-align: center;
+}
+.objednaj {
+  text-align: end;
+  background: #c6a9b3;
+  box-sizing: initial;
+  margin-bottom: 20px;
+}
+.objednaj > button {
+  border: none;
+  margin-right: 20px;
+  padding: 10px;
+  font-family: "Homemade Apple", cursive;
+  background: #c6a9b3;
+  font-size: 1.2em;
+}
+.objednaj > button:hover {
+  cursor: pointer;
+  color: #efe6ee;
+}
+
+.headings > h2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Homemade Apple", cursive;
+  font-weight: lighter;
+  font-size: 25px;
+}
+.headings > h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* PORTFOLIO AKO MENU */
+.sluzby {
+  width: 100%;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 150px 150px;
+  grid-gap: 20px;
+  background: #efe7ea;
+}
+.svadba-text {
+  display: none;
+}
+.dekoracie-text {
+  display: none;
+}
+.nalepky-text {
+  display: none;
+}
+
+/* SVADOBNA VYZDOBA */
+.svadba {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url(./img/svadobne\ dekor.jpeg);
+  box-shadow: 1px 1px 10px #b47e81;
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: cover;
+}
+.svadba > h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5em;
+  color: #efe6ee;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+.svadba>h3>a{
+  text-decoration: none;
+  color: #efe6ee;
+}
+.svadba:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(./img/svadobne\ dekor.jpeg);
+  box-shadow: 1px 1px 10px #b47e81;
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: cover;
+
+}
+.svadba:hover h3 {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* DEKORACIE */
+.dekoracie {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(./img/dekoracie.jpeg);
+  box-shadow: 1px 1px 10px #b47e81;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.dekoracie > h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5em;
+  color: #efe6ee;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+.dekoracie>h3>a{
+  text-decoration: none;
+  color: #efe6ee;
+}
+.dekoracie:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(./img/dekoracie.jpeg);
+  box-shadow: 1px 1px 10px #b47e81;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.dekoracie:hover h3 {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* NALEPKY A REZANA GRAFIKA */
+.nalepky {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(./img/nalepka\ na\ auto.jpeg);
+  box-shadow: 0px 1px 20px #b47e81;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.nalepky > h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5em;
+  color: #efe6ee;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+.nalepky>h3>a{
+  text-decoration: none;
+  color: #efe6ee;
+}
+.nalepky:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(./img/nalepka\ na\ auto.jpeg);
+  box-shadow: 0px 1px 20px #b47e81;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.nalepky:hover h3 {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* ------------------------------------------------- */
+/* FOOTER */
+.foot {
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  background: #c6a9b3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "popis popis popis popis"
+    "popis popis popis popis"
+    "fb fb fb fb"
+    "insta insta insta insta"
+    "email email email email";
+  justify-items: center;
+  align-items: center;
+}
+
+.popis {
+  padding-bottom: 20px;
+  grid-area: popis;
+  text-align: center;
+}
+.popis > h4 {
+  font-family: "Homemade Apple", cursive;
+  font-weight: bolder;
+  display: inline;
+  text-shadow: 2px 2px 10px #efe6ee;
+  font-size: 1.5em;
+}
+.popis > h5 {
+  font-family: "Amatic SC", cursive;
+  display: inline;
+  font-size: 1.2em;
+  /* color: #8D5356; */
+}
+
+.facebook {
+  grid-area: fb;
+  padding-bottom: 10px;
+}
+
+.facebook > i > a {
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 1.4em;
+  color: #744446;
+}
+.fa-facebook-f {
+  color: #744446;
+}
+.facebook:hover a {
+  color: #efe6ee;
+}
+.instagram {
+  grid-area: insta;
+  padding-bottom: 10px;
+}
+
+.instagram > i > a {
+  text-align: left;
+
+  text-decoration: none;
+  /* font-size: 1.6em; */
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 1.4em;
+  color: #744446;
+}
+.fa-instagram {
+  color: #744446;
+}
+.instagram:hover a {
+  color: #efe6ee;
+}
+.email {
+  grid-area: email;
+}
+.email > i > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 1.4em;
+  color: #744446;
+}
+.fa-envelope {
+  color: #744446;
+}
+.email:hover a {
+  color: #efe6ee;
+}
+
+/* ----------------------------------------------------- */
+/* PC VERSION OD 600PX */
+
+@media screen and (min-width: 700px) {
+  .main-site {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #efe6ee;
+    box-sizing: border-box;
+  }
+  /* HLAVICKA */
+  .head {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto;
+    grid-column: 1/-1;
+  }
+  .logo {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 1.2em;
+    text-align: center;
+  }
+  .headings {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    text-align: left;
+  }
+  .objednaj {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    text-align: end;
+    background: #c6a9b3;
+    box-sizing: initial;
+    margin-bottom: 20px;
+  }
+  .headings > h2 {
+    font-family: "Homemade Apple", cursive;
+    font-weight: lighter;
+    font-size: 35px;
+  }
+  .headings > h3 {
+    padding: 0;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+  }
+
+  /* PORTFOLIO AKO MENU */
+  .sluzby {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, minmax(150px, auto));
+    grid-gap: 20px;
+    grid-template-areas:
+      "svadba svadba-text"
+      "dekoracie dekoracie-text"
+      "nalepky nalepky-text";
+    background: #efe7ea;
+  }
+
+  /* SVADOBNY TEXT VEDLA OBR SVADOBNE DEKORACIE */
+
+  .svadba-text {
+    display: inline;
+    grid-area: svadba-text;
+  }
+  .svadba-text > h3 {
+    margin: 0;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.8em;
+  }
+  .svadba-text>h3>a{
+    text-decoration: none;
+    color: black;
+  }
+  .svadba-text > h3:hover a {
+    cursor: pointer;
+    color: #b47e81;
+  }
+  .svadba-text > p {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .dekoracie-text {
+    display: inline;
+    grid-area: dekoracie-text;
+  }
+  .dekoracie-text > h3 {
+    margin: 0;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.8em;
+  }
+  .dekoracie-text>h3>a{
+    text-decoration: none;
+    color: black;
+  }
+  .dekoracie-text > h3:hover a{
+    cursor: pointer;
+    color: #b47e81;
+  }
+  .dekoracie-text > p {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .nalepky-text {
+    display: inline;
+    grid-area: nalepky-text;
+  }
+  .nalepky-text > h3 {
+    margin: 0;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.8em;
+  }
+  .nalepky-text>h3>a{
+    text-decoration: none;
+    color: black;
+  }
+  .nalepky-text > h3:hover a{
+    cursor: pointer;
+    color: #b47e81;
+  }
+  .nalepky-text > p {
+    font-family: "Raleway", sans-serif;
+  }
+
+  /* SVADOBNA VYZDOBA */
+  .svadba {
+    grid-area: svadba;
+    box-shadow: 1px 1px 10px #b47e81;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: cover;
+  }
+  .svadba > h3 {
+    font-family: "Amatic SC", cursive;
+    font-size: 2.5em;
+    color: #efe6ee;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+  }
+  .svadba:hover {
+    
+    box-shadow: 1px 1px 10px #b47e81;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: cover;
+  }
+  .svadba:hover h3 {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  /* DEKORACIE */
+  .dekoracie {
+    height: 100%;
+    grid-area: dekoracie;
+    
+    box-shadow: 1px 1px 10px #b47e81;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .dekoracie > h3 {
+    font-family: "Amatic SC", cursive;
+    font-size: 2.5em;
+    color: #efe6ee;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+  }
+  .dekoracie:hover {
+    
+    box-shadow: 1px 1px 10px #b47e81;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .dekoracie:hover h3 {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  /* NALEPKY A REZANA GRAFIKA */
+  .nalepky {
+    grid-area: nalepky;
+    
+    box-shadow: 0px 1px 20px #b47e81;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .nalepky > h3 {
+    font-family: "Amatic SC", cursive;
+    font-size: 2.5em;
+    color: #efe6ee;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+  }
+  .nalepky:hover {
+    
+    box-shadow: 0px 1px 20px #b47e81;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .nalepky:hover h3 {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  /* FOOTER */
+  .foot {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    background: #c6a9b3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "popis popis popis popis"
+      "popis popis popis popis"
+      "fb fb fb fb"
+      "insta insta insta insta"
+      "email email email email";
+    justify-items: center;
+    align-items: center;
+  }
+
+  .popis {
+    padding-bottom: 20px;
+    grid-area: popis;
+    text-align: center;
+  }
+  .popis > h4 {
+    font-family: "Homemade Apple", cursive;
+    font-weight: bolder;
+    display: inline;
+      font-size: 1.5em;
+    text-shadow: 2px 2px 10px #efe6ee;
+  }
+  .popis > h5 {
+    font-family: "Amatic SC", cursive;
+    display: inline;
+      font-size: 1.2em;
+
+    /* color: #8D5356; */
+  }
+
+  .facebook {
+    grid-area: fb;
+    padding-bottom: 10px;
+  }
+
+  .facebook > i > a {
+    /* text-align: right; */
+    text-decoration: none;
+    color: black;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    font-size: 1.4em;
+
+    color: #744446;
+  }
+  .fa-facebook-f {
+    color: #744446;
+  }
+  .facebook:hover a {
+    color: #efe6ee;
+  }
+  .instagram {
+    grid-area: insta;
+    padding-bottom: 10px;
+  }
+
+  .instagram > i > a {
+    text-align: left;
+
+    text-decoration: none;
+    font-size: 1.4em;
+
+    color: black;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    color: #744446;
+  }
+  .fa-instagram {
+    color: #744446;
+  }
+  .instagram:hover a {
+    color: #efe6ee;
+  }
+  .email {
+    grid-area: email;
+  }
+  .email > i > a {
+    text-decoration: none;
+    font-size: 1.4em;
+
+    color: black;
+    font-family: "Amatic SC", cursive;
+    font-weight: bolder;
+    color: #744446;
+  }
+  .fa-envelope {
+    color: #744446;
+  }
+  .email:hover a {
+    color: #efe6ee;
+  }
+}
+
+
+
+/* zvacsenie backgroundu pri hover */
